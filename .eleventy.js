@@ -112,6 +112,7 @@ module.exports = function(eleventyConfig) {
     return lines
   })
   // Conver og images from SVG to JPG
+  /*
   eleventyConfig.on('afterBuild', () => {
     const socialPreviewImagesDir = '_site/assets/img/og/'
     fs.readdir(socialPreviewImagesDir, function (err, files) {
@@ -136,7 +137,7 @@ module.exports = function(eleventyConfig) {
         })
       }
     })
-  })
+  })*/
   // aside notes
   eleventyConfig.addLiquidShortcode('aside', (text,) => {
     return `<p class="aside">${text}</p>`
