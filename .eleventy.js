@@ -6,7 +6,7 @@ const img2picture = require('eleventy-plugin-img2picture')
 const fs = require("fs");
 const Image = require("@11ty/eleventy-img");
 const embedEverything = require("eleventy-plugin-embed-everything");
-moment.locale('en')
+moment.locale('ru')
 
 module.exports = function(eleventyConfig) {
   // Plugins

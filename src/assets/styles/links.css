@@ -159,9 +159,4 @@ a:not([class]):focus {
   border-style: unset;
   padding: unset;
 }
-p {
-  max-width: 840px;
-  margin: 0 0 16px 0;
-}
-
 

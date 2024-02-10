@@ -1,6 +1,6 @@
 ﻿/*! bettertext.css v2.0.4 | MIT License | github.com/paulradzkov/bettertext.css */
 body {
-    font-family: "TildaSans", system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family:  "Golos-Text", system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-size: 1em;
     line-height: 1.5rem;
   }
@@ -19,8 +19,10 @@ body {
     margin-right: 0;
   }
   p {
+    font-size: 1.5rem;
     margin: 0 0 1.5em;
     max-width: 50rem;
+    line-height: 1.4;
   }
   /* minimum paragraph width when floating http://css-tricks.com/minimum-paragraph-widths/ */
   p:before,
@@ -40,8 +42,9 @@ body {
   h4,
   h5,
   h6 {
-    font-family: "TildaSans", system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+    font-family: "Golos-UI", system-ui, -apple-system, BlinkMacSystemFont, "SF UI Text", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
     font-weight: bolder;
+    /**/
   }
   h1 {
     font-size: 1.625em;
