@@ -1,0 +1,50 @@
+---
+layout: journal-feed.liquid
+title: Первое место
+desc: Small Description for Blog article Feed
+pagination:
+  data: collections.articles
+  size: 10
+  reverse: true
+  alias: journal
+---
+
+{% for article in pagination.items %} {% if article.data.published %}
+<div class="mb-16" itemscope itemtype="https://schema.org/Blogarticleing">
+  <h2 class="text-2xl sm:text-4xl font-bold leading-tight">
+    <a
+      class="link-novisited no-underline hover:underline"
+      href="{{ article.url }}"
+      itemprop="url"
+      ><span itemprop="name">{{ article.data.title }}</span></a
+    >
+  </h2>
+  <div>
+    <em
+      ><time itemprop="datePublished" datetime="{{ article.date | dateIso }}"
+        >{{ article.date | dateReadable }}</time
+      ></em
+    ><span class="text-base font-normal">
+      &middot; Reading Time ≈ {{ article.templateContent | readTime }} min</span
+    >
+  </div>
+  <div itemprop="articleBody">{{ article.templateContent }}</div>
+
+  <div
+    class="flex flex-nowrap items-center mt-4 text-2xl sm:text-md md:text-lg lg:text-xl xl:text-2xl"
+  >
+    <div class="pr-4">
+      {% for tag in article.data.tags %} {% if tag != "articles" %}
+      <span class="pr-2"
+        ><a
+          href="/tags/{{ tag | slug }}"
+          class="link-novisited no-underline hover:underline"
+          >{{ tag }}</a
+        ></span
+      >
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% endif %} {% endfor %} {% include "paginator.liquid" %}

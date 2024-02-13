@@ -1,11 +1,11 @@
 ﻿---
-layout: post
+layout: article
 title: Часы в подъезде
 desc: Example file in md extention with shortcuts
 date: 2021-06-13
 url: clock-in-the-entryway
 cover: "horizontal-mgmt-OG.png"
-permalink: "/posts/{{ url | slug }}/"
+permalink: "/journal/{{ url | slug }}/"
 tags:
   - Коммуникации
   - Инструменты

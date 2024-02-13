@@ -1,11 +1,11 @@
 ﻿---
-layout: post
+layout: article
 title: Плавный запуск проекта Добрососедство 2.0
 desc: Example file in md extention with shortcuts
 date: 2021-06-12
 url: staert-of-project
 cover: "horizontal-mgmt-OG.png"
-permalink: "/posts/{{ url | slug }}/"
+permalink: "/journal/{{ url | slug }}/"
 tags:
   - Коммуникации
   - Инструменты

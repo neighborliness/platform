@@ -16,19 +16,19 @@ eleventyExcludeFromCollections: true
         <description>{{ site.description }}</description>
         <language>ru-ru</language>
 		<copyright>© {{ site.author }} × 2017 — {% year %}</copyright>
-		{%- for post in collections.posts | reverse %}
-		{{ site.url }}{{ post.url }}
+		{%- for article in collections.articles | reverse %}
+		{{ site.url }}{{ article.url }}
         <item turbo="true">
             <!-- Information about the page -->
-			<title>{{ post.data.title }}</title>
-			<description>{{ post.data.desc }}</description>
+			<title>{{ article.data.title }}</title>
+			<description>{{ article.data.desc }}</description>
             <turbo:extendedHtml>true</turbo:extendedHtml>
-            <link>{{ site.url }}{{ post.url }}</link>
+            <link>{{ site.url }}{{ article.url }}</link>
             <pubDate>{{ date | dateIso }}</pubDate>
             <author>{{ site.author }}</author>
             <turbo:content>
                 <![CDATA[
-                {{ post.templateContent }}
+                {{ article.templateContent }}
             ]]>
             </turbo:content>
         </item>

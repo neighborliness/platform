@@ -1,11 +1,11 @@
 ﻿---
-layout: post
+layout: article
 title: Номерок на дверь
 desc: Example file in md extention with shortcuts
 date: 2021-06-13
 url: door-number
 cover: "horizontal-mgmt-OG.png"
-permalink: "/posts/{{ url | slug }}/"
+permalink: "/journal/{{ url | slug }}/"
 tags:
   - Коммуникации
   - Инструменты

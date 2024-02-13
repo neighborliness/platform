@@ -1,11 +1,11 @@
 ﻿---
-layout: post
+layout: article
 title: Как я победил объявления на входной двери
 desc: Example file in md extention with shortcuts
 date: 2021-06-14
 url: how-i-defeated-the-adverts-on-my-front-door
 cover: "horizontal-mgmt-OG.png"
-permalink: "/posts/{{ url | slug }}/"
+permalink: "/journal/{{ url | slug }}/"
 tags:
   - Коммуникации
   - Инструменты
