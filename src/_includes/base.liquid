@@ -12,7 +12,7 @@
     <meta name="author" content="{{ site.author.name }}" />
 
     <!--Favicons-->
-    {% include "_partials/favicons.liquid" %}
+    {% include "_partials/favicons-main.liquid" %}
 
     <!--Opengraph-->
     <meta property="og:title" content="{{ data.title }}" />
@@ -52,7 +52,6 @@
     <link href="{{ site.url }}{{ page.url | url }}" rel="canonical" />
 
     <!--Others-->
-    <link href="/manifest.json" rel="manifest" />
     <link href="/humans.txt" rel="author" />
     <link href="/sitemap.xml" rel="sitemap" type="application/xml" />
 
@@ -86,7 +85,7 @@
     <main
       class="px-5 sm:max-w-2xl sm:px-8 lg:px-0 antialiased md:max-w-full grid gap-12 mt-4 overflow-hidden md:overflow-visible"
     >
-    {% include "_partials/nav.liquid" %}
+      {% include "_partials/nav.liquid" %}
 
       {{ content }}
       {% include "_partials/footer.liquid" %}
